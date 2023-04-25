@@ -16,7 +16,7 @@ KEYGEN_SEED=$(head -c 32 /dev/urandom | xxd -p -c 32)
 DIRK_PEERS="1:dirk1:13141,2:dirk2:13142,3:dirk3:13143"
 DIRK_PEER_IDS="$(echo $DIRK_PEERS | awk -F '[,:]' '{for(i=1;i<=NF;i+=3) printf "%s ", $i; print ""}')"
 for id in $DIRK_PEER_IDS; do
-    echo ./ethdont \
+    ./ethdont \
         -dirk-peers "${DIRK_PEERS}" \
         -keystore keystores/keystore.json \
         -keystore-passphrase "$(cat keystores/secret)" \
