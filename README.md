@@ -24,7 +24,7 @@ for id in $DIRK_PEER_IDS; do
         -wallet-passphrase "something secret" \
         -keygen-seed "${KEYGEN_SEED}" \
         -account val-1 \
-        -wallet-base-dir ./wallets/dirk${id}/wallets/ \
+        -wallet-base-dir wallets/dirk${id}/wallets/ \
         -dirk-id "${id}"
 done
 ```
