@@ -1,5 +1,6 @@
 ## What is this?
-ethdont does things that ethdo does not do.
+ethdont splits an existing BLS12-381 key using Shamir's secret sharing using a chosen threshold.
+Each key share is then imported into a Dirk distributed wallet.
 
 ## Build
 
@@ -23,7 +24,7 @@ for id in $DIRK_PEER_IDS; do
         -wallet DistributedWallet \
         -wallet-passphrase "something secret" \
         -keygen-seed "${KEYGEN_SEED}" \
-        -account val-1 \
+        -account validator-1 \
         -wallet-base-dir wallets/dirk${id}/wallets/ \
         -dirk-id "${id}"
 done
