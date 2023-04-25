@@ -1,5 +1,5 @@
 ## What is this?
-ethdont splits an existing BLS12-381 key using Shamir's secret sharing using a chosen threshold.
+ethdont splits an existing BLS12-381 key using Shamir's secret sharing with a chosen threshold.
 Each key share is then imported into a Dirk distributed wallet.
 
 ## Build
