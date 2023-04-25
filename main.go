@@ -125,7 +125,7 @@ func main() {
 		os.Exit(1)
 	}
 
-	// Create a distributed key.
+	// Create a split key.
 	dirkIds := make([]uint64, 0, len(dirkPeers))
 	for id := range dirkPeers {
 		dirkIds = append(dirkIds, id)
