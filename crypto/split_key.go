@@ -29,7 +29,7 @@ type SplitKey struct {
 func NewSplitKey(secret *bls.SecretKey, threshold uint64, ids []uint64, seed []byte) (*SplitKey, error) {
 	splitKey := SplitKey{secret: secret, Threshold: threshold}
 
-	// If a seed is specified, use it to derive the secret key.
+	// If a seed is specified, use it to derive keys and polynomial coefficients.
 	if seed != nil {
 		splitKey.initKeygen(seed)
 	}
