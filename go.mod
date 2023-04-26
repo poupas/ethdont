@@ -1,4 +1,4 @@
-module github.com/poupas/split-validator-keys
+module github.com/poupas/ethdont
 
 go 1.20
 
