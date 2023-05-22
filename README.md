@@ -4,9 +4,18 @@ Each key share is then imported into a Dirk distributed wallet.
 
 ## Build
 
+**Native***
 ```
 make build
 ```
+
+**Docker**
+
+```
+make docker
+```
+
+If using the Docker image, run with `docker run --rm -ti ethdont`
 
 ## Run
 
