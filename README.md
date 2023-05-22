@@ -15,7 +15,7 @@ make build
 make docker
 ```
 
-If using the Docker image, run with `docker run --rm -ti ethdont`
+If using the Docker image, run with `docker run --rm -ti -v $(pwd):/data:rw --workdir /data ethdont`
 
 ## Run
 
