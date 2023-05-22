@@ -9,7 +9,7 @@ import (
 	"strings"
 
 	"github.com/herumi/bls-eth-go-binary/bls"
-	"github.com/poupas/split-validator-keys/crypto"
+	"github.com/poupas/ethdont/crypto"
 )
 
 func parseDirkPeers(s string) (map[uint64]string, error) {
