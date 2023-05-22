@@ -19,6 +19,10 @@ If using the Docker image, run with `docker run --rm -ti -v $(pwd):/data:rw --wo
 
 ## Run
 
+### Requirements
+  * keystore in `keystores/keystore.json`
+  * keystore passphrase in `keystores/secret`
+
 ```
 # Create a random seed for the deterministic key generator
 KEYGEN_SEED=$(head -c 32 /dev/urandom | xxd -p -c 32)
